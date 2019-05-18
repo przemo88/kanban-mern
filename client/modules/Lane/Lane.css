@@ -1,0 +1,33 @@
+/* Lane styles */
+.Lanes {
+    max-width: 20%;
+    min-height: 50%;
+    margin: 0;
+    display: block;
+    padding: 20px;
+}
+
+.LaneAddNote button {
+    color: #fff;
+    font-size: 16px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: #2d6fb9;
+    border-radius: 5px;
+    margin: 10px auto;
+    display: block;
+}
+
+
+
+.LaneDelete button {
+    color: white;
+    font-size: 16px;
+    width: 150px;
+    height: 30px;
+    border: none;
+    background-color:orange;
+    border-radius: 5px;
+    margin: 10px auto;
+}

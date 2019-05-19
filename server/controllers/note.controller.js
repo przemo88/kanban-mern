@@ -34,7 +34,7 @@ export function addNote(req, res) {
 }
 
 export function deleteNote(req, res) {
-  const noteId = req.params.noteId;
+  const note_id = req.params.noteId;
   Note.findOne({ id: req.params.noteId }).exec((err, note) => {
     if (err) {
       res.status(500).send(err);

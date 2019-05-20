@@ -34,13 +34,13 @@ export function addNote(req, res) {
 }
 
 export function deleteNote(req, res) {
-  const note_id = req.params.noteId;
+ 
   Note.findOne({ id: req.params.noteId }).exec((err, note) => {
-    if (err) {
-      res.status(500).send(err);
+    if (!req.params.noteId) {
+      res.status(400).end();
     }
 
-    Lane.findOne({ notes: note_id })
+    Lane.findOne({ notes: req.params.noteId})
     .then(lane => {
       const updatedNotes = lane.notes.filter(note => note.id !== noteId);
       lane.update({ notes: updatedNotes }, err => {

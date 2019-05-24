@@ -1,10 +1,14 @@
 /* Lane styles */
 .Lanes {
-    max-width: 20%;
+    max-width: 25%;
     min-height: 50%;
-    margin: 0;
-    display: block;
-    padding: 20px;
+    margin: 20;
+    display: flex;
+}
+
+.Lane{
+    background: rgb(123,123,123);
+    margin: 0 10px;
 }
 
 .LaneAddNote button {

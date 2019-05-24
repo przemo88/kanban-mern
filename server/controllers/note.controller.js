@@ -70,6 +70,6 @@ export function editNote(req, res) {
       res.status(500).send(err);
     }
 
-    res.json({ note });
+    res.json(req.body.note);
   });
 }
